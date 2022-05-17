@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="formulariologin" (keyup.enter)="guardar()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">confimar Contraseña</ion-label>
+      <ion-input formControlName="confipass" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input formControlName="correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Patente</ion-label>
+      <ion-input formControlName="patente"></ion-input>
+    </ion-item>
+    <br>
+    <br>
+    <br>
+    <ion-button (click)="guardar()">Registrar</ion-button>
+    <br>
+    <br>
+    <ion-button routerLink="/home">Volver</ion-button>
+  </form>
+
+</ion-content>
+
+
