@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+   <form [formGroup]="formulariologin">
+     <br>
+     <ion-item>
+       <ion-label class="ion-text-center" position="floating">Nombre</ion-label>
+       <ion-input formcontrolname="nombre"></ion-input>
+     </ion-item>
+     <br>
+     <br>
+     <br>
+     <ion-item>
+       <ion-label class="ion-text-center" position="floating">Contraseña</ion-label>
+       <ion-input formcontrolname="password" type="password"></ion-input>
+     </ion-item>
+   </form>
+   <br>
+   <br>
+    <ion-button (click)="iniciar()">Iniciar sesion</ion-button>
+    <br>
+    <ion-button routerLink="/home">Volver</ion-button>
+ 
+</ion-content>
