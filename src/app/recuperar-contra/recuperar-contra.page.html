@@ -1,9 +1,34 @@
+<!--menu-opciones-->
 <ion-header>
   <ion-toolbar>
-    <ion-title>recuperar-contra</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recuperar contraseña</ion-title>
   </ion-toolbar>
 </ion-header>
+ 
 
+<ion-menu side="start" menuId="contra" contentId="contra">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/menu-general">Menu</ion-item>
+      <ion-item routerLink="/perfil">perfil
+      </ion-item>
+      <ion-item routerLink="/home">cerrar sesion</ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="contra"></ion-router-outlet>
+
+<!--metodo-recuperar-pass-->
 <ion-content>
 
 </ion-content>

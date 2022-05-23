@@ -1,9 +1,36 @@
+<!--menu-opciones-->
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
     <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
+ 
 
+<ion-menu side="start" menuId="perfil" contentId="perfil">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/menu-general">Menu</ion-item>
+      <ion-item routerLink="/recuperar-contra">Recuperar contraseña</ion-item>
+      <ion-item routerLink="/home">cerrar sesion</ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="perfil"></ion-router-outlet>
+
+
+
+
+<!--foto-e-info-->
 <ion-content class="fondo">
   <ion-grid class="centro-card">
       <ion-row class="centro-card ion-align-items-center">
@@ -40,5 +67,10 @@
               </ion-card> 
           </ion-col>
       </ion-row>
-  </ion-grid>   
+  </ion-grid>  
+  
+  
+  
 </ion-content>
+
+
